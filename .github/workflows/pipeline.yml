@@ -49,11 +49,12 @@ jobs:
           python-version: '3.7.11'
 
       - name: Install Requirements
-        run:  pip install flask flask-wtf
+        run:  pip install flask flask-wtf coverage
 
       # - name: Install Requirements
       #   run:  pip install flask pytest flask-wtf    
 
+      #tem que trocar o run aqui - o properties do sonar e isntalar o coverage
       - name: Unit Test
         run: python -m unittest -v test
 
