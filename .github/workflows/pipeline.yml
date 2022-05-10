@@ -64,7 +64,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          EXTRA_ARGS: -Dsonar.projectDescription=\"Project with sonarcloud-scan pipe\" -Dsonar.python.coverage.reportPaths=./coverage.xml
+          EXTRA_ARGS: ./coverage.xml
   Deploy:
     needs: Build
     runs-on: ubuntu-latest
