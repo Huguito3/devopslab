@@ -57,7 +57,7 @@ jobs:
       #tem que trocar o run aqui - o properties do sonar e isntalar o coverage
       - name: Unit Test
         # run: python -m unittest -v test
-        run: coverage run -m unittest -v test
+        run: coverage run -m unittest -v test report
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
