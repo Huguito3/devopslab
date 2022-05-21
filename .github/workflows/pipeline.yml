@@ -60,7 +60,7 @@ jobs:
         run: coverage run -m unittest -v test 
 
       - name: Coverage report
-        run: coverage report
+        run: coverage xml
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
